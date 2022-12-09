@@ -34,7 +34,7 @@ header h2 {
 }
 #nav_menu ul li {
     float: left;
-    width: 16.66%;                 /* 160 / 800 x 100 */
+    width: 20%;                 /* 160 / 800 x 100 */
 }
 #nav_menu ul li a {
     display: block;
@@ -44,19 +44,19 @@ header h2 {
     background-color: tan;
     color: white;
     font-weight: bold;
+    width: 336px;
 }
-#nav_menu ul li:hover > ul {
-    display: block;
+li ul {
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-#nav_menu > ul::after {
-    content: "";
+li ul li{
     clear: both;
-    display: block;
 }
-
-main article {
-    width: 60%;
-    float: left;
+ul li:hover ul{
+    display: block;
 }
 
 /* style for the aside*/
